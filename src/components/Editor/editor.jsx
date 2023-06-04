@@ -47,7 +47,7 @@ function Editor(props) {
         />
         <InputControl
           label="Company Name"
-          placeholder="Enter company name eg. amazon"
+          placeholder="Enter company name eg. Amazon"
           value={values.companyName}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, companyName: event.target.value }))
@@ -122,7 +122,7 @@ function Editor(props) {
         <InputControl
           label="Title"
           value={values.title}
-          placeholder="Enter title eg. Chat app"
+          placeholder="Enter project title eg. Chatbot"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
           }
@@ -131,7 +131,7 @@ function Editor(props) {
       <InputControl
         label="Overview"
         value={values.overview}
-        placeholder="Enter basic overview of project"
+        placeholder="Enter basic overview of your project"
         onChange={(event) =>
           setValues((prev) => ({ ...prev, overview: event.target.value }))
         }
@@ -185,7 +185,7 @@ function Editor(props) {
         <InputControl
           label="Title"
           value={values.title}
-          placeholder="Enter title eg. B-tech"
+          placeholder="Enter title eg. Btech(CSE)"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
           }
@@ -226,7 +226,7 @@ function Editor(props) {
       <div className={styles.row}>
         <InputControl
           label="Name"
-          placeholder="Enter your full name eg. Aashu"
+          placeholder="Enter your full name eg. Hubert Blaine "
           value={values.name}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, name: event.target.value }))
@@ -235,7 +235,7 @@ function Editor(props) {
         <InputControl
           label="Title"
           value={values.title}
-          placeholder="Enter your title eg. Frontend developer"
+          placeholder="Enter your title eg. Frontend Developer"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
           }
@@ -245,7 +245,7 @@ function Editor(props) {
         <InputControl
           label="Linkedin Link"
           value={values.linkedin}
-          placeholder="Enter your linkedin profile link"
+          placeholder="Enter your linkedin profile id eg. hubertBlaine"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, linkedin: event.target.value }))
           }
@@ -253,7 +253,7 @@ function Editor(props) {
         <InputControl
           label="Github Link"
           value={values.github}
-          placeholder="Enter your github profile link"
+          placeholder="Enter your github username eg. hurbertCoder"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, github: event.target.value }))
           }
@@ -350,7 +350,7 @@ function Editor(props) {
       <InputControl
         label="Profile"
         value={values.profile}
-        placeholder="Enter something"
+        placeholder="Enter something about you not your objective"
         onChange={(event) =>
           setValues((prev) => ({ ...prev, profile: event.target.value }))
         }
