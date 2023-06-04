@@ -309,7 +309,7 @@ function Editor(props) {
   const skillsBody = (
     <div className={styles.detail}>
       <div className={styles.column}>
-        <label>List your achievements</label>
+        <label>List your skills</label>
         <InputControl
           placeholder="Skill 1"
           value={values.points ? values.points[0] : ""}
@@ -634,7 +634,7 @@ function Editor(props) {
   }, [activeDetailIndex]);
 
   return (
-    <div className="flex flex-col gap-8 mt-0 ml-8 w-full max-w-lg max-w-[950px] border-2 border-[#7E7E7E] border-solid border-opacity-30">
+    <div className="flex flex-col gap-8 mt-0 ml-8 w-90 max-w-lg max-w-[720px] border-2 border-[#7E7E7E] border-solid border-opacity-30">
       <div className={styles.header}>
         {Object.keys(sections)?.map((key) => (
           <div
@@ -691,7 +691,7 @@ function Editor(props) {
 
         {generateBody()}
 
-        <button onClick={handleSubmission} className="font-bold py-2 px-4  mb-8 rounded-lg bg-black text-white  max-h-14 w-130">Save</button>
+        <button onClick={handleSubmission} className="font-bold py-2 px-4 mb-8 rounded-lg bg-black text-white max-h-14 w-130">Save</button>
       </div>
     </div>
   );

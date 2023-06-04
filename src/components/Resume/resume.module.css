@@ -2,7 +2,7 @@
 .container {
     --color: #239ce2;
     padding: 10px;
-    height: 100vh;
+    height: 100%;
   }
   @media print {
     .container {
@@ -12,49 +12,47 @@
   .header {
     position: absolute;
     display: flex;
+    padding: 10px;
     flex-direction: column;
   }
   
   .header .heading {
+    position: absolute;
     font-size: 24px;
     word-wrap: break-word;
     width: 170px;
     font-weight: 800;
-    font-family: Lexend;
+    font-family: Inter;
     text-transform: uppercase;
   }
   
   .header .subHeading {
+    position: absolute;
+    margin-top: 70px;
+    width: 200px;
     color: var(--color);
     font-weight: 500;
     font-family: Lexend;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 15px;
     text-transform: capitalize;
   }
   
   .header .links {
     position: absolute;
-    margin-top: 15px;
-    margin-left: 31%;
+    margin-left: 550px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    gap: 30px;
-    flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 12px;
+    font-size: 12px;
   }
   
   .header .link {
-    position: relative;
-    left: 39rem;
-    font-size: 0.875rem;
     display: flex;
-    align-items: center;
-    gap: 5px;
-    font-family: Lexend;
-    cursor: pointer;
+    position: relative;
   }
+
   .logo{
     position: absolute;
     background-color: var(--color);
@@ -69,11 +67,11 @@
     background-color: var(--color);
     color: white;
     opacity: 1;
-    font-size: 13px;
+    font-size: 12px;
     justify-content: center;
     align-items: center;
   }
-  
+
   .main {
     margin-top: 50px;
     display: flex;
@@ -84,11 +82,11 @@
     flex: 1.1;
     padding: 10px;
     display: flex;
-    background-color: #F6F8FA;
+    /* background-color: #F6F8FA; */
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     flex-direction: column;
-    margin-top: 90px;
+    margin-top: 80px;
     margin-left: -30px;
     gap: 20px;
   }
@@ -112,13 +110,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    line-height: 16px;
     padding: 10px 0;
   }
   .section .content .item {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
     padding-bottom: 10px;
   }
   .section .content .item:last-child {
@@ -127,7 +125,7 @@
   
   .content .title {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 1.3rem;
     font-weight: bold;
     color: var(--color);
@@ -135,26 +133,25 @@
   }
   .content .etitle {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 1.3rem;
     font-family: Lexend;
   }
   .content .subTitle {
     font-weight: 600;
     margin-top: 5px;
-    font-size: 1rem;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 
   .content .esubTitle{
     font-weight: 700;
-    margin-top: 5px;
     color: var(--color);
-    font-size: 1rem;
+    font-size: 12px;
   }
   
   .content .overview {
-    font-size: 13px;
+    font-size: 12px;
     text-align: justify;
     margin-right: 20px;
     font-family: Lexend;
@@ -178,13 +175,14 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    font-size: 0.875rem;
+    font-size: 12px;
   }
   .wdate{
-    position: relative;
+    position: absolute;
     display: flex;
-    margin-top: -25px;
+    font-size: 12px;
     margin-left: 16rem;
+    margin-top: 30px;
     align-items: center;
     gap: 5px;
   }
@@ -192,10 +190,20 @@
     display: flex;
     position: absolute;
     margin-left: 16rem;
+    margin-top: 5px;
     align-items: center;
     gap: 5px;
+    width: 40px;
+    font-size: 12px;
   }
-  
+  .locText{
+    position: absolute;
+    max-width: 100px;
+    word-wrap: break-word;
+    width: 80px;
+    margin-left: 16px
+  }
+
   .content .date svg {
     height: 14px;
     width: 14px;
@@ -204,9 +212,10 @@
   .content .points,
   .numbered {
     padding-left: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     opacity: 0.7;
-    font-size: 0.875rem;
+    font-size: 12px;
+    font-family: Lexend;
     list-style-type: disc;
   }
   
@@ -214,16 +223,18 @@
     list-style-type: disc;
   }
   li{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .hidden {
     display: none;
   }
+  .proLink{
+    display: flex;
+    position: absolute;
+    margin-left: 240px;
+    flex-direction: row;
+  }
   .plink{
     color: var(--color);
-    position: relative;
-    display: flex;
-    flex-direction: row;
     width: 30px;
-    background-color: bisque;
   }

@@ -21,8 +21,8 @@ function Header() {
 
           <div className="flex items-center gap-10">
             <ul className='flex items-center gap-14 font-inter text-sm font-bold'>
-              <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'>ABOUT</li>
-              <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'>FAQ</li>
+              <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'> <Link to='/about'>ABOUT</Link></li>
+              <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'> <Link to='/faq'>FAQ</Link></li>
               <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'> <Link className="btn font-bold py-3 px-5 rounded-lg bg-black text-white  max-h-14 w-130" to='/editor' >TRY IT!</Link> </li>
             </ul>
           </div>
@@ -31,7 +31,7 @@ function Header() {
         {/* {Mobile} */}
         <div className='flex md:hidden w-full h-full'></div>
       </header>
-      <div className="md:flex flex-row items-left w-screen mt-52 ml-50 justify-between p-10">
+      <div className="md:flex flex-row items-left w-screen mt-40 justify-between p-10">
         <div className="flex items-start max-w-sm flex-1 flex-col">
           <p className="text-5xl font-poppins font-extra-bold w-[800px] ml-24">CREATE PROFESSIONAL <span className="text-[#FF9900]">RESUME</span> & <span className="text-[#FF9900]">CV</span> IN JUST FEW MINUTES</p>
           <p className="text-3xl font-poppins font-bold-light mt-3 ml-24">CREATE YOUR RESUME EASILY! IT'S <span className="text-[#FF9900]">FREE</span> </p>
@@ -50,31 +50,31 @@ function Header() {
       <div className="w-[calc(100vw-150px)] border-b-2 ml-14 border-#7E7E7E" ></div>
       <div className="flex items-center">
         <div className="flex">
-          <p className="text-4xl font-poppins ml-36 mt-10 font-bold-light w-[140px]">KEY <span className="text-[#FF9900]">FEATURES</span></p>
+          <p className="text-4xl font-poppins ml-32 mt-10 font-bold-light w-[140px]">KEY <span className="text-[#FF9900]">FEATURES</span></p>
         </div>
         <div className="flex flex-row justify-evenly w-full">
-          <div className="flex flex-row ml-64 items-center">
+          <div className="flex flex-row ml-52 items-center">
             <div className="flex flex-row">
               <div className="w-[270px] align-middle justify-center items-center">
                 <img src={colorp} alt="color_picker" className="w-[123px] h-[89px] text-center justify-center ml-16" />
                 <p className="text-center font-poppins font-semibold text-2xl mt-5">Pick a color</p>
-                <p className="text-center font-poppins text-[#6B6B6B] mt-2 leading-7">We have different colors available. Select according to your choice.</p>
+                <p className="text-center font-poppins text-[#6B6B6B] mt-2 leading-7">We offer a variety of colors to choose from. Pick the one that suits your preference.</p>
               </div>
               <div className="w-[270px] align-middle justify-center items-center ml-16">
                 <img src={edit_details} alt="color_picker" className="w-[123px] h-[89px] text-center justify-center ml-16" />
                 <p className="text-center font-poppins font-semibold text-2xl mt-5">Fill the details</p>
-                <p className="text-center font-poppins text-[#6B6B6B] mt-2 leading-7">Fill out your details quickly and get a preview of your resume side by side.</p>
+                <p className="text-center font-poppins text-[#6B6B6B] mt-2 leading-7">Fill your information, save it and instantly view a side-by-side preview of your resume.</p>
               </div>
               <div className="w-[270px] align-middle justify-center items-center ml-16">
                 <img src={slider} alt="color_picker" className="w-[123px] h-[89px] text-center justify-center ml-16" />
                 <p className="text-center font-poppins font-semibold text-2xl mt-5">Customize</p>
-                <p className="text-center font-poppins text-[#6B6B6B] mt-2 leading-7">Customize the sections as you want by dragging the sections.</p>
+                <p className="text-center font-poppins text-[#6B6B6B] mt-2 leading-7">Personalize the sections as per your preference by rearranging them, then download your professional resume in PDF format.</p>
               </div>
-              <div className="w-[270px] align-middle justify-center items-center ml-16">
+              {/* <div className="w-[270px] align-middle justify-center items-center ml-16">
                 <img src={download} alt="color_picker" className="w-[123px] h-[89px] ml-16" />
                 <p className="text-center font-poppins font-semibold text-2xl mt-5">Download</p>
                 <p className="text-center font-poppins text-[#6B6B6B] mt-2 leading-7">Download your professional resume in pdf format.</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

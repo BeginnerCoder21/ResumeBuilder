@@ -65,6 +65,7 @@ function Body() {
         },
     });
 
+    
     return (
 
         <div>
@@ -77,8 +78,8 @@ function Body() {
 
                     <div className="flex items-center gap-10">
                         <ul className='flex items-center gap-14 font-inter text-sm font-bold'>
-                            <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'>ABOUT</li>
-                            <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'>FAQ</li>
+                            <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'><Link to='/about'>ABOUT</Link></li>
+                            <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'><Link to='/faq'>FAQ</Link></li>
                             <li className='textColor cursor-pointer hover:text-headingColor duration-100 transition-all ease-in-out font-inter'>
                                 <ReactToPrint
                                     trigger={() => {

@@ -1,9 +1,10 @@
 import React, {useRef, useState, forwardRef} from "react";
 import styles from './resume.module.css';
 import { useEffect } from "react";
-import {FiPaperclip, FiGithub, FiCalendar,FiAtSign, FiPhone, FiLinkedin, FiMapPin} from "react-icons/fi";
+import {FiPaperclip, FiGithub, FiCalendar,FiAtSign, FiPhone, FiLinkedin, FiMapPin,FiExternalLink} from "react-icons/fi";
 import {ImPhone, ImLinkedin2, ImGithub} from "react-icons/im";
 import {MdEmail} from "react-icons/md";
+import {HiOutlineExternalLink} from "react-icons/hi"; 
 import {BsGlobe} from "react-icons/bs";
 
 const Resume = forwardRef((props, ref) => {
@@ -69,7 +70,7 @@ const Resume = forwardRef((props, ref) => {
                 )}
                 {item.location ? (
                   <p className={styles.location}>
-                    <FiMapPin /> {item.location}
+                    <FiMapPin /> <p className={styles.locText}>{item.location}</p>
                   </p>
                 ) : (
                   <span />
@@ -88,7 +89,7 @@ const Resume = forwardRef((props, ref) => {
                 {item.certificationLink ? (
                   <a className={styles.link} href={item.certificationLink}>
                     <FiPaperclip />
-                    {item.certificationLink}
+                    Certificate Link
                   </a>
                 ) : (
                   <span />
@@ -117,13 +118,7 @@ const Resume = forwardRef((props, ref) => {
                 ) : (
                   <span />
                 )}
-                {item.link ? (
-                  <a className={styles.plink} href={item.link}>
-                    <FiPaperclip />
-                  </a>
-                ) : (
-                  <span />
-                )}
+                <div className={styles.proLink}>
                 {item.github ? (
                   <a className={styles.plink} href={item.github}>
                     <FiGithub />
@@ -131,6 +126,15 @@ const Resume = forwardRef((props, ref) => {
                 ) : (
                   <span />
                 )}
+                {item.link ? (
+                  <a className={styles.plink} href={item.link}>
+                    <FiExternalLink />
+                  </a>
+                ) : (
+                  <span />
+                )}
+                
+                </div>
                 {item.overview ? (
                   <p className={styles.overview}>{item.overview} </p>
                 ) : (
@@ -350,18 +354,21 @@ const Resume = forwardRef((props, ref) => {
                : (
                 <span />
               )}
-              {info.basicInfo?.detail?.linkedin ? (
-                <a className={styles.link} href={info.basicInfo?.detail?.linkedin}>
-                 <div className={styles.logo}><ImLinkedin2 /> </div>
+              {
+                info.basicInfo?.detail?.linkedin ? (
+                <a className={styles.link} href={'https://www.linkedin.com/in/'+info.basicInfo?.detail?.linkedin}>
+                {info.basicInfo?.detail?.linkedin} <p className={styles.logo}><ImLinkedin2 /> </p>
                 </a>
               ) : (
                 <span />
-              )}
+              )
+              }
               {info.basicInfo?.detail?.github ? (
-                <a className={styles.link} href={info.basicInfo?.detail?.github}>
-                    <div className={styles.logo}><ImGithub /> </div>
+                <a className={styles.link} href={'https://github.com/'+info.basicInfo?.detail?.github}>
+                {info.basicInfo?.detail?.github} <p className={styles.logo}><ImGithub /> </p>
                 </a>
-              ) : (
+              ) 
+              : (
                 <span />
               )}
             </div>
