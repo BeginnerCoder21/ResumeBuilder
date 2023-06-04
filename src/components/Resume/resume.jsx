@@ -87,7 +87,7 @@ const Resume = forwardRef((props, ref) => {
                   <span />
                 )}
                 {item.certificationLink ? (
-                  <a className={styles.link} href={item.certificationLink}>
+                  <a className={styles.link} href={item.certificationLink} target="_blank">
                     <FiPaperclip />
                     Certificate Link
                   </a>
@@ -120,14 +120,14 @@ const Resume = forwardRef((props, ref) => {
                 )}
                 <div className={styles.proLink}>
                 {item.github ? (
-                  <a className={styles.plink} href={item.github}>
+                  <a className={styles.plink} href={item.github} target="_blank">
                     <FiGithub />
                   </a>
                 ) : (
                   <span />
                 )}
                 {item.link ? (
-                  <a className={styles.plink} href={item.link}>
+                  <a className={styles.plink} href={item.link} target="_blank">
                     <FiExternalLink />
                   </a>
                 ) : (
@@ -339,7 +339,7 @@ const Resume = forwardRef((props, ref) => {
   
             <div className={styles.links}>
             {info.basicInfo?.detail?.phone ? (
-                <a className={styles.link}>
+                <a className={styles.link} target="_blank">
                  {info.basicInfo?.detail?.phone}  <p className={styles.logo}><ImPhone /> </p>
                 </a>
               )
@@ -347,7 +347,7 @@ const Resume = forwardRef((props, ref) => {
                 <span />
               )}
               {info.basicInfo?.detail?.email ? (
-                <a className={styles.link } type="email" href={info.basicInfo?.detail?.email}>
+                <a className={styles.link } type="email" href={info.basicInfo?.detail?.email} target="_blank">
                  {info.basicInfo?.detail?.email} <p className={styles.logo}><MdEmail /> </p>
                 </a>
               )
@@ -356,7 +356,7 @@ const Resume = forwardRef((props, ref) => {
               )}
               {
                 info.basicInfo?.detail?.linkedin ? (
-                <a className={styles.link} href={'https://www.linkedin.com/in/'+info.basicInfo?.detail?.linkedin}>
+                <a className={styles.link} href={'https://www.linkedin.com/in/'+info.basicInfo?.detail?.linkedin} target="_blank">
                 {info.basicInfo?.detail?.linkedin} <p className={styles.logo}><ImLinkedin2 /> </p>
                 </a>
               ) : (
@@ -364,7 +364,7 @@ const Resume = forwardRef((props, ref) => {
               )
               }
               {info.basicInfo?.detail?.github ? (
-                <a className={styles.link} href={'https://github.com/'+info.basicInfo?.detail?.github}>
+                <a className={styles.link} href={'https://github.com/'+info.basicInfo?.detail?.github} target="_blank">
                 {info.basicInfo?.detail?.github} <p className={styles.logo}><ImGithub /> </p>
                 </a>
               ) 
