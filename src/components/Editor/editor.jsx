@@ -243,7 +243,7 @@ function Editor(props) {
       </div>
       <div className={styles.row}>
         <InputControl
-          label="Linkedin Link"
+          label="Linkedin Username"
           value={values.linkedin}
           placeholder="Enter your linkedin profile id eg. hubertBlaine"
           onChange={(event) =>
@@ -251,7 +251,7 @@ function Editor(props) {
           }
         />
         <InputControl
-          label="Github Link"
+          label="Github Username"
           value={values.github}
           placeholder="Enter your github username eg. hurbertCoder"
           onChange={(event) =>
