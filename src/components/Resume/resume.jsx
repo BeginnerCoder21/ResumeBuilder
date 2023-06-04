@@ -347,7 +347,7 @@ const Resume = forwardRef((props, ref) => {
                 <span />
               )}
               {info.basicInfo?.detail?.email ? (
-                <a className={styles.link } type="email">
+                <a className={styles.link } type="email" href={info.basicInfo?.detail?.email}>
                  {info.basicInfo?.detail?.email} <p className={styles.logo}><MdEmail /> </p>
                 </a>
               )
